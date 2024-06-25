@@ -1,12 +1,13 @@
 ---
 submission_id: 499
-title: Digital History Switzerland 2024 submission title
+title: From manual labour to artificial intelligence: developments in data literacy using the example of the Repertorium Academicum Germanicum (2001-2024).
+
 author:
   - name: Kaspar Gubler
     orcid: 0000-0002-6627-5045
     email: kaspar.gubler@unibe.ch
     affiliations:
-      - Universität Bern
+      - University of Bern
 keywords:
   - Digital Prosopography
   - History of universities
