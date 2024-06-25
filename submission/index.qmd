@@ -4,22 +4,21 @@ title: Digital History Switzerland 2024 submission title
 author:
   - name: Kaspar Gubler
     orcid: 0000-0002-6627-5045
-    email: kaspar.gubler@uni.be
+    email: kaspar.gubler@unibe.ch
     affiliations:
       - Universität Bern
 keywords:
-  - Keyword 1
-  - Keyword 2
-  - Keyword 3
-  - Keyword 4 (optional)
-  - Keyword 5 (optional)
+  - Digital Prosopography
+  - History of universities
+  - History of knowledge
+  - Data visualisations
 abstract: |
-  Short abstract of the submission. This is a placeholder for the abstract of the manuscript. It should be between 150 and 250 words. It must not contain any references or unexplained abbreviations.
+  The Repertorium Academicum Germanicum (RAG) is a prosopographical research project focussing on medieval scholars and their social influence in pre-modern Europe (1250-1550). The RAG database comprises around 62,000 scholars with 400,000 biographical data at 26,000 locations, taken from university registers and other university-related sources. The aim of the project is to create a prosopographical database for research into the influence of pre-modern European scholars. As a pioneering project in digital prosopography, the RAG is exemplary for the development of data competences in the last 20 years. The presentation will therefore highlight the methods, procedures, best practices and future approaches used to date. The data competences in RAG are divided into data collection and data analysis. Originally manual data collection is now supplemented by computer-aided procedures. Data analysis includes the selection of data, statistical evaluations and visualisations (maps, networks, time series), whereby the interpretation of the results and the historical contextualisation are of paramount importance. The use of artificial intelligence in both areas (collection and analysis) is also discussed, with a focus on its potential and transformative impact.
 key-points:
   - Key point 1 (1 sentence)
   - Key point 2 (1 sentence)
   - Key point 3 (1 sentence)
-date: 03-17-2024
+date: 06-27-2024
 bibliography: references.bib
 ---
 
