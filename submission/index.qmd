@@ -2,17 +2,11 @@
 submission_id: 499
 title: Digital History Switzerland 2024 submission title
 author:
-  - name: Petra Huber
-    orcid: 0000-0002-0760-5497
-    email: petra.huber@university.ch
+  - name: Kaspar Gubler
+    orcid: 0000-0002-6627-5045
+    email: kaspar.gubler@uni.be
     affiliations:
-      - University 1
-  - name: Michel Meier
-    orcid: 0000-0002-7859-8394
-    email: michel.meier@university.edu
-    affiliations:
-      - University 1
-      - University 2
+      - Universität Bern
 keywords:
   - Keyword 1
   - Keyword 2
