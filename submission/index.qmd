@@ -25,7 +25,7 @@ bibliography: references.bib
 
 ## Introduction
 
-This is a placeholder for the extended abstract of the paper. It should be between 1500 and 2000 words (excluding references).
+Since 2020, the RAG has been a sub-project of the umbrella project Repertorium Academicum (REPAC), which is being carried out at the Historical Institute of the University of Bern. The RAG, which was digitally orientated from the outset, can be described as a pioneering project in digital prosopography. The aim of the conference paper is to illustrate the developments in the field of data competences over the last 20 years using the RAG as a case study. Methods, procedures and best practices will be presented and future-oriented approaches will be discussed. Data competences in the RAG can be divided into two areas: data collection, which includes the compilation and enrichment of data, and data analysis. In the case of data collection, which was originally only carried out manually, computerised, automated processes were added over time. The same applies to the second area of data analysis. This includes compiling a selection of data, statistical evaluations and data visualisations (maps, networks, time series). Of crucial importance in data analysis, however, is the interpretation of the results against the background of historical contextualisation. The data alone is only the tip of the iceberg. The rest of the iceberg (context) only becomes apparent when it is analysed using specialist knowledge. This means also that different skills are required for data collection and data analysis. In addition, we can now work in both areas using computer-aided methods of artificial intelligence as a supplement. The extent to which artificial intelligence is changing the way we work and where its potential lies will be discussed in this conference paper.
 
 Check <https://quarto.org/docs/authoring/markdown-basics.html> for more information on how to use markdown, <https://quarto.org/docs/authoring/cross-references.html> for more information on how to use cross-references like this (See @fig-example and @fig-plots), and <https://quarto.org/docs/authoring/footnotes-and-citations.html> for more information on how to use citations like this one [@haber2011, p. 11].
 
@@ -35,42 +35,52 @@ Check <https://quarto.org/docs/authoring/markdown-basics.html> for more informat
 
 :::
 
-## Section 1
+## Project history
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+The RAG started with a Microsoft Access database as a multi-user installation. In 2007, the switch was made to a client-server architecture, with MS Access continuing to serve as the front end and a Microsoft SQL server being added as the back end. This configuration had to be replaced in 2017 as regular software updates for the client and server had been neglected. As a result, it was no longer possible to update the MS Access client to the new architecture in good time and the server, which was running on the outdated MS SQL Server 2005 operating system, increasingly posed a security risk. In addition, publishing the data on the internet was only possible to a limited extent, as a fragmented export from the MS SQL server to a MySQL database with a PHP front end was required.
+In 2017, it was therefore decided to switch to a new system. Over one million data records on people, events, observations, locations, institutions, sources and literature were to be integrated in a database migration - a project that had previously been considered for years without success. After a comprehensive evaluation of possible research environments, nodegoat was chosen, based on a tip from a colleague who had attended a nodegoat workshop. With nodegoat, the RAG was able to implement the desired functions immediately:
+Location-independent data collection thanks to a web-based front end.
+Data visualisations (maps, networks, time series) are integrated directly into nodegoat, which means that exporting to other software is not necessary, but possible.
+Research data can be published directly from nodegoat without the need to export it to other software.
+From then on, the RAG research team worked with nodegoat in a live environment in which the data collected can be made available on the Internet immediately after a brief review. This facilitated the exchange with the research community and the interested public and significantly increased the visibility of the research project. The database migration to nodegoat meant that the biographical details of around 10,000 people could be published for the first time, which had previously not been possible due to difficulties in exporting data from the MS SQL server. On 1 January 2018, the research teams at the universities in Bern and Giessen then began collecting data in nodegoat, starting with extensive standardisation of the data. Thanks to a multi-change function in nodegoat, these standardisations could now be carried out efficiently by all users. Institutions where biographical events took place (e.g. universities, schools, cities, courts, churches, monasteries, courts) were newly introduced.
 
-## Quarto Usage
 
-For advanced users, we recommend exploring features as **Code Blocks**: Use triple backticks (```) to create code blocks. Specify the language for syntax highlighting (e.g., ```python`). Quarto lets you run code and embed its output directly into your document. See <https://quarto.org/docs/computations/inline-code.html> for guidance.
+## Methodology
 
-```{python}
-#| output: false
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
+These institutions were assigned to the events accordingly, which forms the basis for the project's method of analysis: analysing the data according to the criteria 'incoming' and 'outgoing'. The key questions here are: Which people, ideas or knowledge entered an institution or space? How was this knowledge shared and passed on there? Spaces are considered both as geographical locations and as knowledge spaces within networks of scholars. In addition, the written works of scholars are taken into account in order to document their knowledge. The people themselves are seen as knowledge carriers who acquire knowledge and pass it on.
+Data skills  
+Let's move on to the skills in dealing with research data and digital tools that students and researchers can acquire in the research project. By working with nodegoat, students can learn various skills and knowledge in data collection and analysis. In the project, a distinction is made between the skills required to collect the data and those required to analyse the data. The central learning content related to data acquisition is:
+Basics of data modelling
+Students learn how to design and adapt data structures in order to systematically record, manage and analyse historical information. They understand how to define entities (such as people, places, events) and their relationships.
 
-# Create some simple synthetic historical data
-np.random.seed(0)
-years = pd.date_range('1900-01-01', periods=120, freq='Y')
-values = np.random.normal(loc=0, scale=1, size=120).cumsum()
+Data input and management
+Practical experience in entering and maintaining data in a user-friendly digital environment. Techniques to ensure data quality and consistency.
+Key learning content related to data analysis:
+Geographical and temporal visualisations: Use of GIS functionalities to create and analyse geographical maps. Visualisation of historical data on time axes to show chronological processes and changes.
+Linking and analysing data (network analysis): Methods for linking different data sets and analysing networks and interactions between historical actors. Application of filters and search functions for targeted data analysis.
+Interpretation of the digital findings: The data is always interpreted against the historical context. Without sound specialist knowledge of history, the data does not provide any in-depth insights for historical research, but only allows superficial observations.
+Other fundamental skills that can be learnt in the project are technical skills: Basic knowledge of the use of digital research tools and platforms. Understanding of the technical basics of databases and digital research environments. Project management and documentation skills: planning and implementation of data collection and analysis projects. Careful documentation of work steps and data sources to ensure transparency and traceability.
 
-data = pd.DataFrame({
-    'Year': years.year,
-    'Value': values
-})
+Human and artificial intelligence
 
-# Save the data to a CSV file
-data.to_csv('data/sample_data.csv', index=False)
-```
+How have data skills and the digitalisation of research changed since the start of the project, particularly with regard to artificial intelligence methods and tools that expand or generate new epistemological perspectives?
 
-```{python}
-#| label: fig-plots
-# Plotting the data
-plt.figure(figsize=(10, 6))
-plt.plot(data['Year'], data['Value'], marker='o')
-plt.title('Synthetic Historical Data')
-plt.xlabel('Year')
-plt.ylabel('Value')
-plt.grid(True)
-plt.show()
-```
+Expertise in data collection and analysis has developed continuously over the course of the project. Thanks to technical advances in digital research, many work steps in both areas have been automated or at least partially automated.
+
+In the area of data collection and collaborative work, the web-based software has made the work between the teams from the universities of Bern and Giessen considerably easier and more transparent. The teams were able to follow each other's progress in a live environment, making the work location less important. The increased availability of information through digitisation, particularly through Google Books, has facilitated prosopographical research as much information can be accessed and incorporated into the database more quickly. This increased availability of digitised data and the simplified extraction of information have fundamentally expanded epistemological perspectives and practices since the project began.
+
+
+However, these changes mainly concern the preparation of information and less the actual familiarisation with the research database. Due to the heterogeneous and often fragmented nature of the sources, data collection cannot be fully automated. In-depth specialist knowledge of the historical field under investigation is crucial, particularly with regard to the history of universities and knowledge in the European Middle Ages and the Renaissance. Artificial intelligence cannot yet generate this expertise, as historical events and their semantic levels are too nuanced. However, artificial intelligence can help with the rapid processing and pre-sorting of digital information used for data collection. An example of this is the use of Transkribus to create OCR texts, which are then imported directly into nodegoat and matched with specific vocabularies (algorithms).
+
+While the support of artificial intelligence in data acquisition is still limited, it has greatly facilitated data analysis over the last two decades. The epistemological framework of knowledge acquisition has expanded considerably in digital prosopography. The graphical user interface enables complex queries and immediate visualisations of the data, which is particularly valuable for social network analysis. The data can be visualised on maps and displayed dynamically with a time slider, providing new insights.
+
+These observations apply to historical research in general: digital means enable faster and broader access to information from sources and literature. However, the most difficult task remains the interpretation of the results, the evaluation of information and the recognition of connections, which we call knowledge. The epistemological framework for acquiring knowledge has been significantly expanded by digitalisation and automation, but recognising and describing new findings still requires historical expertise. If, on the other hand, information is only processed, at best only an epistemological framework is defined.
+
+Conclusion
+
+Since the 1990s, historical research has made increasing use of digital tools. Nevertheless, it is astonishing that skills in dealing with data are still poorly developed in historical studies. This is not due to a lack of demand from students, but to the teaching and, in particular, to the chairs, which should offer regular courses and training. This is the only way for students to acquire sound knowledge in dealing with research data and digital tools and methods in general.
+
+Although there are now a growing number of courses and initiatives for digital teaching, the chairs must become more active in order to integrate a sustainable range of courses into general teaching. Digital skills must become part of the basic training of history students, especially with regard to their career prospects and the critical use of artificial intelligence methods and tools that make information assessment increasingly difficult.
+
+By working with nodegoat, students acquire both theoretical knowledge and practical skills that are fundamental to contemporary digital history.
+
