@@ -49,8 +49,7 @@ From then on, the RAG research team worked with nodegoat in a live environment i
 
 These institutions were assigned to the events accordingly, which forms the basis for the project's method of analysis: analysing the data according to the criteria 'incoming' and 'outgoing'. The key questions here are: Which people, ideas or knowledge entered an institution or space? How was this knowledge shared and passed on there? Spaces are considered both as geographical locations and as knowledge spaces within networks of scholars. In addition, the written works of scholars are taken into account in order to document their knowledge. The people themselves are seen as knowledge carriers who acquire knowledge and pass it on.
 Data skills  
-Let's move on to the skills in dealing with research data and digital tools that students and researchers can acquire in the research project. By working with nodegoat, students can learn various skills and knowledge in data collection and analysis. In the project, a distinction is made between the skills required to collect the data and those required to analyse the data. The central learning content related to data acquisition is:
-Basics of data modelling
+Let's move on to the skills in dealing with research data and digital tools that students and researchers can acquire in the research project. By working with nodegoat, students can learn various skills and knowledge in data collection and analysis. In the project, a distinction is made between the skills required to collect the data and those required to analyse the data. The central learning content related to data acquisition is: Basics of data modelling
 Students learn how to design and adapt data structures in order to systematically record, manage and analyse historical information. They understand how to define entities (such as people, places, events) and their relationships.
 
 Data input and management
