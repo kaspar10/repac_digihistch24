@@ -1,7 +1,6 @@
 ---
 submission_id: 499
-title: From manual labour to artificial intelligence: developments in data literacy using the example of the Repertorium Academicum Germanicum (2001-2024)
-
+title:
 author:
   - name: Kaspar Gubler
     orcid: 0000-0002-6627-5045
