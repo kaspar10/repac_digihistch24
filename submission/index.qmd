@@ -104,7 +104,7 @@ Use of GIS functionalities to create and analyse geographical maps. Visualisatio
 
 Knowing and applying methods for linking different data sets and for analysing networks and interactions between historical actors such as people, institutions, objects and others. The data can also be exported from nodegoat in order to evaluate it with other visualisation software, for example such as Gephi for network analyses. The graphic shows the general settings in nodegoat for network analyses.
 
-![Fig. 6: General network analysis settings in nodegoat.](images/Network analysis settings in nodegoat.png)
+![Fig. 6: General settings for network analyses in nodegoat.](images/Network analysis settings in nodegoat.png)
 
 - Interpretation of the digital findings (patterns, developments)
 
