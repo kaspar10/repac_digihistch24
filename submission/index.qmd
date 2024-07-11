@@ -1,84 +1,145 @@
 ---
 submission_id: 499
-title:
+title: "From manual work to artificial intelligence: developments in data literacy using the example of the Repertorium Academicum Germanicum (2001-2024)"
 author:
   - name: Kaspar Gubler
     orcid: 0000-0002-6627-5045
     email: kaspar.gubler@unibe.ch
     affiliations:
-      - University of Bern
+    - University of Bern
+    - University of Krakow (Hector)
+
 keywords:
   - Digital Prosopography
-  - History of universities
-  - History of knowledge
+  - Data Biographies
   - Data visualisations
+  - Network analysis
+  - History of knowledge and science
+  - History of universities
+ 
 abstract: |
-  The Repertorium Academicum Germanicum (RAG) is a prosopographical research project focussing on medieval scholars and their social influence in pre-modern Europe (1250-1550). The RAG database comprises around 62,000 scholars with 400,000 biographical data at 26,000 locations, taken from university registers and other university-related sources. The aim of the project is to create a prosopographical database for research into the influence of pre-modern European scholars. As a pioneering project in digital prosopography, the RAG is exemplary for the development of data competences in the last 20 years. The presentation will therefore highlight the methods, procedures, best practices and future approaches used to date. The data competences in RAG are divided into data collection and data analysis. Originally manual data collection is now supplemented by computer-aided procedures. Data analysis includes the selection of data, statistical evaluations and visualisations (maps, networks, time series), whereby the interpretation of the results and the historical contextualisation are of paramount importance. The use of artificial intelligence in both areas (collection and analysis) is also discussed, with a focus on its potential and transformative impact.
+  The Repertorium Academicum Germanicum (RAG) is a prosopographical research project dedicated to studying medieval scholars and their impact on society in Europe from 1250 to 1550. The RAG database contains approximately 62,000 scholars and 400,000 biographical entries across 26,000 locations, derived from university registers, academic sources, and general biographical records. As a pioneering project in digital prosopography, the RAG is exemplary for the development of data competences in the last 20 years. The presentation will therefore highlight the methods, procedures, best practices and future approaches used to date. What is special about the RAG is that the project not only collects data, but also analyses it in a targeted manner with a focus on data visualisations (maps, networks, time series). RAG presents the results in its own series of publications [(RAG Forschungen). ](https://vdf.ch/index.php?route=product/collection&language=de-DE&collection_id=35)
+
 key-points:
-  - Key point 1 (1 sentence)
-  - Key point 2 (1 sentence)
-  - Key point 3 (1 sentence)
-date: 06-27-2024
+  - Key point 1 The Repertorium Academicum Germanicum (RAG) focuses on the knowledge influence of medieval scholars in pre-modern Europe, creating a comprehensive research database.
+  - Key point 2 The RAG database, with data on 62,000 scholars, has advanced from manual to computer-aided and AI-assisted data collection and analysis.
+  - Key point 3 Technological advancements, including the use of nodegoat, have enhanced data management, collaboration, and accessibility, integrating AI for improved historical data analysis.
+date: 07-07-2024
 bibliography: references.bib
 ---
 
 ## Introduction
 
-Since 2020, the RAG has been a sub-project of the umbrella project Repertorium Academicum (REPAC), which is being carried out at the Historical Institute of the University of Bern. The RAG, which was digitally orientated from the outset, can be described as a pioneering project in digital prosopography. The aim of the conference paper is to illustrate the developments in the field of data competences over the last 20 years using the RAG as a case study. Methods, procedures and best practices will be presented and future-oriented approaches will be discussed. Data competences in the RAG can be divided into two areas: data collection, which includes the compilation and enrichment of data, and data analysis. In the case of data collection, which was originally only carried out manually, computerised, automated processes were added over time. The same applies to the second area of data analysis. This includes compiling a selection of data, statistical evaluations and data visualisations (maps, networks, time series). Of crucial importance in data analysis, however, is the interpretation of the results against the background of historical contextualisation. The data alone is only the tip of the iceberg. The rest of the iceberg (context) only becomes apparent when it is analysed using specialist knowledge. This means also that different skills are required for data collection and data analysis. In addition, we can now work in both areas using computer-aided methods of artificial intelligence as a supplement. The extent to which artificial intelligence is changing the way we work and where its potential lies will be discussed in this conference paper.
-
-Check <https://quarto.org/docs/authoring/markdown-basics.html> for more information on how to use markdown, <https://quarto.org/docs/authoring/cross-references.html> for more information on how to use cross-references like this (See @fig-example and @fig-plots), and <https://quarto.org/docs/authoring/footnotes-and-citations.html> for more information on how to use citations like this one [@haber2011, p. 11].
-
-::: {#fig-example}
-
-![Figure caption text.](images/placeholder.png)
-
-:::
+The core data of RAG is based on the university registers. The registers usually contain the names and places of origin of the students as well as the date of enrolment. This data is enriched in the research database with biographical data on subjects studied, professional activities and written works. Since 2020, the RAG has been a sub-project of the umbrella project Repertorium Academicum (REPAC), which is being carried out at the Historical Institute of the University of Bern. See on the project and its developments: [@gubler_hesse_schwinges2022].
+Data skills in RAG can be divided into data collection, data entry and data analysis. Different data skills are required in the three areas, which have of course also changed over time as a result of digitalisation. While compiling and analysing data has been simplified by computer-aided processes, the precise recording of data in the database still requires in-depth historical knowledge and human intelligence.
 
 ## Project history
 
 The RAG started with a Microsoft Access database as a multi-user installation. In 2007, the switch was made to a client-server architecture, with MS Access continuing to serve as the front end and a Microsoft SQL server being added as the back end. This configuration had to be replaced in 2017 as regular software updates for the client and server had been neglected. As a result, it was no longer possible to update the MS Access client to the new architecture in good time and the server, which was running on the outdated MS SQL Server 2005 operating system, increasingly posed a security risk. In addition, publishing the data on the internet was only possible to a limited extent, as a fragmented export from the MS SQL server to a MySQL database with a PHP front end was required.
-In 2017, it was therefore decided to switch to a new system. Over one million data records on people, events, observations, locations, institutions, sources and literature were to be integrated in a database migration - a project that had previously been considered for years without success. After a comprehensive evaluation of possible research environments, nodegoat was chosen, based on a tip from a colleague who had attended a nodegoat workshop. With nodegoat, the RAG was able to implement the desired functions immediately:
-Location-independent data collection thanks to a web-based front end.
-Data visualisations (maps, networks, time series) are integrated directly into nodegoat, which means that exporting to other software is not necessary, but possible.
-Research data can be published directly from nodegoat without the need to export it to other software.
+In 2017, it was therefore decided to switch to a new system [@gubler2020].
+
+
+
+![Fig. 1: Former frontend of the RAG project for data collection in MS Access 2003.](images/RAG Eingabemaske MS Access.jpg)
+
+
+Over one million data records on people, events, observations, locations, institutions, sources and literature were to be integrated in a database migration - a project that had previously been considered for years without success. After a evaluation of possible research environments, nodegoat was chosen [@vanBree_Kessels2013]. Nodegoat was a tip from a colleague who had attended a nodegoat workshop[@gubler2021]. With nodegoat, the RAG was able to implement the desired functions immediately:
+
+- Location-independent data collection thanks to a web-based front end.
+
+- Data visualisations (maps, networks, time series) are integrated directly into nodegoat, which means that exporting to other software is not necessary, but possible.
+
+- Research data can be published directly from nodegoat without the need to export it to other software.
+
+
 From then on, the RAG research team worked with nodegoat in a live environment in which the data collected can be made available on the Internet immediately after a brief review. This facilitated the exchange with the research community and the interested public and significantly increased the visibility of the research project. The database migration to nodegoat meant that the biographical details of around 10,000 people could be published for the first time, which had previously not been possible due to difficulties in exporting data from the MS SQL server. On 1 January 2018, the research teams at the universities in Bern and Giessen then began collecting data in nodegoat, starting with extensive standardisation of the data. Thanks to a multi-change function in nodegoat, these standardisations could now be carried out efficiently by all users. Institutions where biographical events took place (e.g. universities, schools, cities, courts, churches, monasteries, courts) were newly introduced.
+
+![Fig. 2: Frontend of the RAG project for data collection in nodegoat.](images/RAG nodegoat frontend for data collection.png)
 
 
 ## Methodology
 
-These institutions were assigned to the events accordingly, which forms the basis for the project's method of analysis: analysing the data according to the criteria 'incoming' and 'outgoing'. The key questions here are: Which people, ideas or knowledge entered an institution or space? How was this knowledge shared and passed on there? Spaces are considered both as geographical locations and as knowledge spaces within networks of scholars. In addition, the written works of scholars are taken into account in order to document their knowledge. The people themselves are seen as knowledge carriers who acquire knowledge and pass it on.
-Data skills  
-Let's move on to the skills in dealing with research data and digital tools that students and researchers can acquire in the research project. By working with nodegoat, students can learn various skills and knowledge in data collection and analysis. In the project, a distinction is made between the skills required to collect the data and those required to analyse the data. The central learning content related to data acquisition is: Basics of data modelling
-Students learn how to design and adapt data structures in order to systematically record, manage and analyse historical information. They understand how to define entities (such as people, places, events) and their relationships.
+These institutions were assigned to the events accordingly, which forms the basis for the project's method of analysis: analysing the data according to the criteria 'incoming' and 'outgoing' [@gubler2022]. The key questions here are: Which people, ideas or knowledge entered an institution or space?
 
-Data input and management
-Practical experience in entering and maintaining data in a user-friendly digital environment. Techniques to ensure data quality and consistency.
-Key learning content related to data analysis:
-Geographical and temporal visualisations: Use of GIS functionalities to create and analyse geographical maps. Visualisation of historical data on time axes to show chronological processes and changes.
-Linking and analysing data (network analysis): Methods for linking different data sets and analysing networks and interactions between historical actors. Application of filters and search functions for targeted data analysis.
-Interpretation of the digital findings: The data is always interpreted against the historical context. Without sound specialist knowledge of history, the data does not provide any in-depth insights for historical research, but only allows superficial observations.
-Other fundamental skills that can be learnt in the project are technical skills: Basic knowledge of the use of digital research tools and platforms. Understanding of the technical basics of databases and digital research environments. Project management and documentation skills: planning and implementation of data collection and analysis projects. Careful documentation of work steps and data sources to ensure transparency and traceability.
+![Fig. 3: Incoming: Places of origin of students at the University of Basel 1460-1550 with the large dot in the centre as the city of Basel., data: repac.ch, 07/2024.](images/Places of origin of students at the university of Basel 1460-1550.png)
 
-Human and artificial intelligence
+How was this knowledge shared and passed on there? Spaces are considered both as geographical locations and as knowledge spaces within networks of scholars. In addition, the written works of scholars are taken into account in order to document their knowledge. The people themselves are seen as knowledge carriers who acquire knowledge and pass it on. Consequently, the people are linked to their knowledge in the database using approaches from the history of knowledge[@steckel2015]. The methodology described can therefore not only be used to research the circulation of knowledge between individuals and institutions, but also to digitally reconstruct spheres of influence and knowledge, for example by discipline: Spaces that were shaped by jurists, Physicians or theologians. The map shows places or regions where a particularly large number of Basel jurists were active. The second graphic shows the network of the same group with famous Bonifacius Amerbach as a strong link in the centre. The network is formed based on a Force-directed graph.
 
-How have data skills and the digitalisation of research changed since the start of the project, particularly with regard to artificial intelligence methods and tools that expand or generate new epistemological perspectives?
+![Fig. 4: Outgoing: Spheres of activity of jurists with a doctorate from the University of Basel
+1460-1550., data: repac.ch, 07/2024.](images/Places of activity of Basel jurists 1460-1550.png)
 
-Expertise in data collection and analysis has developed continuously over the course of the project. Thanks to technical advances in digital research, many work steps in both areas have been automated or at least partially automated.
-
-In the area of data collection and collaborative work, the web-based software has made the work between the teams from the universities of Bern and Giessen considerably easier and more transparent. The teams were able to follow each other's progress in a live environment, making the work location less important. The increased availability of information through digitisation, particularly through Google Books, has facilitated prosopographical research as much information can be accessed and incorporated into the database more quickly. This increased availability of digitised data and the simplified extraction of information have fundamentally expanded epistemological perspectives and practices since the project began.
+![Fig. 5: Network: Jurists with a doctorate from the University of Basel
+1460-1550., data: repac.ch, 07/2024.](images/Network of Basel jurists 1460-1550.png)
 
 
-However, these changes mainly concern the preparation of information and less the actual familiarisation with the research database. Due to the heterogeneous and often fragmented nature of the sources, data collection cannot be fully automated. In-depth specialist knowledge of the historical field under investigation is crucial, particularly with regard to the history of universities and knowledge in the European Middle Ages and the Renaissance. Artificial intelligence cannot yet generate this expertise, as historical events and their semantic levels are too nuanced. However, artificial intelligence can help with the rapid processing and pre-sorting of digital information used for data collection. An example of this is the use of Transkribus to create OCR texts, which are then imported directly into nodegoat and matched with specific vocabularies (algorithms).
+## Data literacy
 
-While the support of artificial intelligence in data acquisition is still limited, it has greatly facilitated data analysis over the last two decades. The epistemological framework of knowledge acquisition has expanded considerably in digital prosopography. The graphical user interface enables complex queries and immediate visualisations of the data, which is particularly valuable for social network analysis. The data can be visualised on maps and displayed dynamically with a time slider, providing new insights.
+Students and researchers working on the RAG project can acquire important data skills. We can make a distinction, as said, between the skills required to collect, enter and analyse the biografical data. Key learning content related to the data entering process for students working in the RAG project are:
 
-These observations apply to historical research in general: digital means enable faster and broader access to information from sources and literature. However, the most difficult task remains the interpretation of the results, the evaluation of information and the recognition of connections, which we call knowledge. The epistemological framework for acquiring knowledge has been significantly expanded by digitalisation and automation, but recognising and describing new findings still requires historical expertise. If, on the other hand, information is only processed, at best only an epistemological framework is defined.
+- Basics of data modelling
 
-Conclusion
+Basic knowledge of the use of digital research tools and platforms. Students learn how to design and adapt data structures in order to systematically enter, manage and analyse historical information. They understand how to define entities (such as people, places, events) and their relationships.
 
-Since the 1990s, historical research has made increasing use of digital tools. Nevertheless, it is astonishing that skills in dealing with data are still poorly developed in historical studies. This is not due to a lack of demand from students, but to the teaching and, in particular, to the chairs, which should offer regular courses and training. This is the only way for students to acquire sound knowledge in dealing with research data and digital tools and methods in general.
+- Basics of data collection
 
-Although there are now a growing number of courses and initiatives for digital teaching, the chairs must become more active in order to integrate a sustainable range of courses into general teaching. Digital skills must become part of the basic training of history students, especially with regard to their career prospects and the critical use of artificial intelligence methods and tools that make information assessment increasingly difficult.
+The collection of data in a historical project involves several steps and methods to ensure data consistency. In the project, students learn how to search and evaluate sources based on research questions and extract the relevant information. Both quantitative and qualitative approaches are considered in the methods of data collection. An SNSF Spark project provides an example of a quantitative approach on dynamic data ingestion of linked open data in one nodegoat environment [@gubler2021_1]
 
-By working with nodegoat, students acquire both theoretical knowledge and practical skills that are fundamental to contemporary digital history.
+- Data entry and management
 
+Students acquire practical experience in entering and maintaining data within a digital research environment. Additionally, they learn to document workflows and data sources to ensure transparency and traceability. For effective data entry, both students and researchers must develop essential skills related to the extraction and evaluation of historical information.
+
+- Source criticism and information extraction
+
+The project's most challenging task is extracting relevant biographical information from sources and literature and systematically recording and documenting it in the database according to project-specific guidelines. The goal is to achieve the highest possible standardization to ensure data quality and consistency. Specifically, students must select life events from approximately 900 biographical categories to accurately record an event. These categories are divided into three major blocks: 1) personal data (birth, death, social and geographical origin, etc.), 2) academic data (specializations, degrees), and 3) professional activities. These encompass all potential fields of activity in both ecclesiastical and secular administration in the late Middle Ages. Collecting data and accurately evaluating information from sources and research literature is a demanding task that requires a solid knowledge of history and Latin.
+
+Key learning content related to data analysis is:
+
+- Learning how to query a database. The use of filters and search functions for targeted data analysis requires a solid understanding of the data model, the data collection methodology, and the available content.
+
+- Geographical and temporal visualisations
+
+Use of GIS functionalities to create and analyse geographical maps. Visualisation of historical data on time axes to show chronological processes and changes.
+
+- Network analysis
+
+Knowing and applying methods for linking different data sets and for analysing networks and interactions between historical actors such as people, institutions, objects and others. The data can also be exported from nodegoat in order to evaluate it with other visualisation software, for example such as Gephi for network analyses. The graphic shows the general settings in nodegoat for network analyses.
+
+![Fig. 6: Network: Jurists with a doctorate from the University of Basel
+1460-1550., data: repac.ch, 07/2024.](images/Network analysis settings in nodegoat.png)
+
+- Interpretation of the digital findings (patterns, developments)
+
+The most important skill in the entire research process is, of course, the ability to interpret the results. The data is always interpreted against the background of the historical context. Without well-founded historical expertise, however, the data cannot provide in-depth insights for historical research, but at best enable superficial observations. It follows that when working with research data, a double source criticism must always take place: when obtaining the information from the sources (data collection) and when analysing the digital results obtained from the information (data interpretation).
+
+## Digitisation
+
+How have the described data competences changed since the start of the project in 2001? This question is linked to changes in the research infrastructure, the availability of digitised material (sources and literature) and with the question of how computer-aided automation, in particular, artificial intelligence have influenced and will influence the practices of data collection, entry and analysis in the project, expanding the epistemological framework? The most important factors in connection with digitalisation in general are:
+
+- Resources: The increasing availability of digitized texts, particularly through Google Books, has significantly transformed prosopographical and biographical research. Not only is a wealth of information more accessible today, but it can also be entered into databases more efficiently. Consequently, skills for digital research and information processing have had to be continuously adapted throughout the course of the project.
+
+- Tools: Since the start of the project, new software tools have significantly transformed the processes of collecting, extracting, entering, and analyzing information. The most substantial development has been in data analysis, which, thanks to advanced tools and user-friendly graphical interfaces, has become accessible to a wide range of researchers, no longer being limited to computer scientists.
+
+- Data analysis: The visualization of research data in historical studies has seen significant advancements. For instance, data can now be displayed on historical maps, within networks, or in time series, and dynamically over time using a time slider in a research environment like nodegoat. This has accelerated data analysis: tasks like creating a map, which took weeks in the early years of the RAG project, now take only a few minutes.
+
+- Interpretation of the data: The core method of historical scholarship, source criticism, has also evolved significantly. While it traditionally involved evaluating information from sources and literature, today it also requires the ability to analyze data visualizations and network representations derived from these sources. To adequately assess these digital findings, a thorough understanding of the data model, data context, and historical background is essential. Consequently, data analysis presents new challenges for historical research, necessitating advanced data competencies at multiple levels.
+
+- Collaboration: Web-based research environments have made collaboration much easier and more transparent. Teams are now able to follow each other's progress in real time, making the location of the work less important and communication smoother.
+
+
+## Human and artificial intelligence
+
+Regarding data collection, entry, and analysis, artificial intelligence significantly impacts several, though not all, tasks within the RAG project.
+
+- Data collection: AI supports the rapid processing and pre-sorting of digital information used for data collection. For example, Transkribus is utilized to create OCR texts, which are then directly imported into nodegoat and matched with specific vocabularies using algorithms [@gubler2023]. This technology aids the RAG project by efficiently detecting references to students and scholars within large text corpora, significantly speeding up the identification and extraction process.
+
+![Fig. 7: Example settings for the algorithm for reconciling textual data in nodegoat.](images/nodegoat text reconciliation settings.png)
+
+
+- Data entry: In this area, human intelligence remains crucial. In-depth specialist knowledge of the historical field under investigation is essential, particularly concerning the history of universities and knowledge in the European Middle Ages and the Renaissance. Due to the heterogeneous and often fragmented nature of the sources, AI cannot yet replicate this expertise. The nuanced understanding required to interpret historical events and their semantic levels still necessitates human insight.
+
+- Data analysis: While AI support for data entry is still limited, it is much greater for data analysis. The epistemological framework has expanded considerably not only in digital prosopography and digital biographical research, but in history in general. Exploratory data analysis in particular will become a key methodology in history through the application of AI.
+
+##  Conclusion
+
+Since the 1990s, digital resources and tools have become increasingly prevalent in historical research. However, skills related to handling data remain underdeveloped in this field. This gap is not due to a lack of interest from students, but rather stems from a chronic lack of available training opportunities. This situation has gradually improved in recent years, with a growing number of courses and significant initiatives promoting digital history.
+Nevertheless, the responsibility now lies with academic chairs to take a more proactive role in integrating a sustainable range of digital courses into the general history curriculum. It is crucial that data literacy becomes a fundamental component of the training for history students, particularly considering their future career prospects and the increasingly complex task of evaluating information, including the critical use of artificial intelligence methods and tools (notably in terms of source criticism). In addition to formal teaching, more project-based learning should be offered to support students in acquiring digital skills.
